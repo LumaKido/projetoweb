@@ -1,5 +1,6 @@
 <?php
-require_once("../model/cadastro.php");
+$root = realpath($_SERVER["DOCUMENT_ROOT"]);
+require_once("$root/projetoweb/model/cadastro.php");
 
 class ControllerCadastro{
 
@@ -7,7 +8,9 @@ class ControllerCadastro{
 
     public function __construct(){
         $this->cadastro = new Cadastro();
-        $this->incluir();
+        if(isset($_GET['funcao']) && $_GET['funcao'] == "cadastro"){
+            $this->incluir();
+        }
     }
 
     private function incluir(){
@@ -22,6 +25,10 @@ class ControllerCadastro{
         }else{
             echo "<script>alert('Erro ao gravar registro!');</script>";
         }
+    }
+
+    public function listar(){
+        return $result = $this->cadastro->listar();
     }
 }
 new ControllerCadastro();
