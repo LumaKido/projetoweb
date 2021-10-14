@@ -16,7 +16,9 @@
 		<div class="row">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-primary col-12">
 				<a class="navbar-brand" href="index.php">SISTEMA WEB</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" 
+				data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+				aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -35,7 +37,7 @@
 			<div class="card mb-3 col-12">
 				<div class="card-body">
 					<h5 class="card-title">Cadastrar - Agendamento de Potenciais Clientes</h5>
-					<p class="card-text">Sistema utilizado para agendamento de serviços.</p>
+					<p class="card-text"style="padding-bottom: 25px;">Sistema utilizado para agendamento de serviços.</p>
 					<p>
 						<form method="post" action="controller/ControllerCadastro.php?funcao=cadastro" id="form" name="form">
 							<div class="form-group">
